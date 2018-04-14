@@ -15,7 +15,7 @@ These instructions assume that `Vagrant 2.0+ is installed`_, `VirtualBox 5.1+ is
 
   1. Install the vagrant plugins required.
 
-::
+  ::
     [@host]$ vagrant plugin install vagrant-hostmanager
     [@host]$ vagrant plugin install vagrant-bindfs
     [@host]$ vagrant plugin install vagrant-vbguest
