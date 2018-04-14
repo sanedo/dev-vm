@@ -1,0 +1,4 @@
+**/*.retry
+.vagrant
+provisioning/roles/geerlingguy*
+provisioning/roles/mplachter*

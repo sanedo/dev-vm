@@ -1,0 +1,25 @@
+---
+- hosts: all
+  become: true
+  become_user: root
+  remote_user: vagrant
+
+  vars_files:
+    - config.yaml
+
+  roles:
+    - role: geerlingguy.git
+    - role: geerlingguy.ntp
+    - role: geerlingguy.repo-epel
+    - role: geerlingguy.repo-remi
+    - role: geerlingguy.pip
+    - role: geerlingguy.apache
+    - role: geerlingguy.mysql
+    - role: geerlingguy.php-versions
+    - role: geerlingguy.php
+    - role: geerlingguy.php-pecl
+    - role: geerlingguy.php-xdebug
+    - role: geerlingguy.blackfire
+    - role: geerlingguy.composer
+    - role: geerlingguy.redis
+    - role: mplachter.aerospike
